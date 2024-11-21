@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!---This is a comment ;)-->
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
 </head>
-<body> <!--Aquí va todo el contenido que ve el usuario-->
+<body> 
     <header>
         <nav>
             <ul class="nav-right-section">
@@ -23,24 +23,28 @@
                 <li>
                     <a href=""><img src="img\imresizer-1732194235274.jpg" alt=""></a></a>
                 </li>
-                
+                <li>
+                    <button id="dark-mode-toggle">
+                        <img src="img/icons8-do-not-disturb-ios-32.png" alt="do-not-disturb-2" alt="Modo Oscuro" class="icon">
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
          <section class="main-logo">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
-</section>
+            <a href="#"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt=""></a>
+         </section>
 
          <section class="main-input">
             <div class="main-input-container">
-                <!-- Logo de lupa -->
                 <span class="search-icon"></span>
-                <!-- Es donde el usuario escribirá lo que desea buscar -->
-                <input type="text">
-                <!-- En el micrófono se usa anchor para simular el comportamiento de un enlace -->
+                <input type="text" id="search-input" placeholder="Buscar...">
+                <div class="suggestions-container">
+                    <ul id="suggestions"></ul>
+                </div>
                 <span class="micro-icon"></span>
-                <!-- Añadir el icono de cámara de Google Lens -->
+
                 <span class="camera-icon"></span>
             </div>
          </section>
@@ -50,5 +54,6 @@
             <div><button>Voy a tener suerte</button></div>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>

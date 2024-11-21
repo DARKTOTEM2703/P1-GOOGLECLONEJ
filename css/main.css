@@ -9,6 +9,49 @@ body {
     cursor: pointer;
   }
 }
+
+body.dark-mode {
+  background-color: #202124;
+  color: #e8eaed;
+}
+
+body.dark-mode a {
+  color: #8ab4f8;
+}
+
+body.dark-mode .main-input-container {
+  background-color: #303134;
+  border: 1px solid #5f6368;
+}
+
+body.dark-mode .main-buttons button {
+  background-color: #303134;
+  color: #e8eaed;
+  border: 1px solid #5f6368;
+}
+
+body.dark-mode .main-buttons button:hover {
+  background-color: #3c4043;
+}
+
+body.dark-mode #suggestions {
+  background-color: #303134;
+  color: #e8eaed;
+}
+
+body.dark-mode #suggestions li:hover {
+  background-color: #3c4043;
+}
+
+body.dark-mode nav .nav-right-section a {
+  color: #8ab4f8;
+}
+
+body.dark-mode .main-input input {
+  background-color: #303134;
+  color: #e8eaed;
+}
+
 header {
   width: 100%;
   height: 60px;
@@ -45,8 +88,17 @@ nav .nav-right-section img {
 }
 main {
   margin-top: 150px;
-  text-align: center;
+  text-align: left; /* Cambia la alineación del texto a la izquierda */
+  padding-left: 20px; /* Añade un padding para separar el texto del borde */
 }
+
+main .main-logo,
+main .main-input,
+main .main-buttons {
+  text-align: center; /* Alinea los otros elementos al centro */
+  margin: 0 auto; /* Centra los elementos horizontalmente */
+}
+
 main .main-logo {
   width: 530px;
   margin: 0 auto;
@@ -87,7 +139,6 @@ main .main-input .search-icon {
   height: 18px;
   margin-right: 10px;
 }
-
 main .main-input .micro-icon {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg");
   background-repeat: no-repeat;
@@ -132,4 +183,33 @@ main .main-buttons button:hover {
   border: 1px solid #c6c6c6;
   box-shadow: 0 1px 1px #000001;
   color: #222;
+}
+
+#suggestions {
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 525px;
+  border-top: none;
+  background-color: white;
+  z-index: 1000;
+  top: 382px;
+  left: 680px;
+}
+
+#suggestions li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#suggestions li:hover {
+  background-color: #e0e0e0;
+}
+
+#dark-mode-toggle .icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
